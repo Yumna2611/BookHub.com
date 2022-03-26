@@ -1,6 +1,6 @@
 # online_booksNmagazines_reading_website
 
-## Created a user-friendly open source website for the avid readers using HTML, CSS, JavaScript, jquery, MySQL and Php. 
+Created a user-friendly open source website for the avid readers using HTML, CSS, JavaScript, jquery, MySQL and Php. 
 # Features: 
  - Login validation 
  - Night and day mode
