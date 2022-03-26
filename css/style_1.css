@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*navbar*/
+.button-group{
+  margin-top: 5px;
+  text-align: center;
+}
+a:hover{
+	background-color: #505050;
+	border-radius: 10px;
+}
+
+/*------Pre-loader-------*/
+.loader{
+    width: 170px;
+    height: 40px;
+    position: relative;
+    margin: 50px auto 0;
+}
+.loader .inner_loader{
+    background: #db2651;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    animation: move-ball -2s infinite linear;
+}
+.loader .inner_loader:nth-child(2){
+    background: #1da1f2;
+    animation-delay: -0.2s;
+}
+.loader .inner_loader:nth-child(3){
+    background: #1ba506;
+    animation-delay: -0.4s;
+}
+.loader .inner_loader:nth-child(4){
+    background: #ec5f20;
+    animation-delay: -0.6s;
+}
+.loader .inner_loader:nth-child(5){
+    background: #742cc0;
+    animation-delay: -0.8s;
+}
+
+#loading{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #fff
+	url('https://icons8.com/preloaders/preloaders/1481/Book.gif')
+  no-repeat center;
+  z-index: 99999;
+}
+
+/*.nav-item:hover {
+	opacity: 70%;
+	background color: red;
+
+}*/
+
+.pg-lg{
+    width: 70px;
+		height: 70px;
+}
+
+
+---------------------------------
+/main-container/
+
+#image{
+ align-self: left;
+ height: 350px;
+ width: 100%;
+ opacity: 0.5;
+}
+
+.main-body{
+	margin-top: 3%;
+	background:#606060 ;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+h1{
+	text-align: center;
+	color: white;
+	font-size: 16;
+	text-shadow: 2px 2px black, 0 0 5px #383838;
+}
+h4{
+	 text-shadow: 2px 2px black, 0 0 5px #383838;
+}
+
+#free-su{
+	color:#fbfcfd;
+	padding: 10px 25px;
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 15px;
+	outline: none;
+	cursor: pointer;
+	margin-bottom: 5px;
+	text-shadow: 2px 2px black;
+}
+
+#books{
+	opacity: 0.75;
+}
+
+#free-su:hover{
+	background: #40bf80;
+}
+
+.icons{
+	margin-left: 20%;
+}
+
+.line{
+	align-self: center;
+	background-color: #F0F0F0;
+}
+.book,.magzine,.news{
+	height: 100px;
+	width: 100px;
+	margin-left: 10%;
+}
+
+/* _____side-bar_______*/
+.side-bar{
+	width: 50px;
+	height: 100vh;
+	background: rgba(90, 90, 120, 0.3);
+	position: absolute;
+	left:0;
+	top: 0;
+	position: fixed;
+}
+
+.menu{
+    display: block;
+	width: 20px;
+	margin: 20px auto 0;
+	cursor: pointer;
+}
+.social-links img, .useful-links img{
+	width: 50px;
+	margin: 10px auto;
+	margin-top: 0px auto;
+	cursor: pointer;
+}
+.social-links{
+	width: 50px;
+	text-align: center;
+	position: absolute;
+	top: 30%;
+	transform: translateY(-50%);
+}
+.useful-links{
+	width: 50px;
+	text-align: center;
+	position: absolute;
+	bottom: 90px;
+}
+
+.best-books{
+	background-color: #606060;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px 2px black;
+}
+
+h2{
+	text-align: center;
+	text-shadow: 2px 2px black;
+}
+
+#books{
+	height: 17%;
+	width: 75%;
+	margin-left: 13%;
+	margin-bottom: 5%;
+}
+
+/*_______footer________*/
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 50px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+#copyright{
+	height: 25px;
+	width: 25px;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 10px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
